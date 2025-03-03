@@ -259,6 +259,64 @@ Scanner input = new Scanner(System.in);
 // System.out.printf("your daily driving cost: $%.2f%n", dailyCost);
 
 // input.close();
+// System.out.print("Enter your grade: ");
+// int studentGrade = input.nextInt();
+// if(studentGrade >= 90)
+//     System.out.print("A");
+// else
+// if (studentGrade >=80)
+//     System.out.println("B");
+// else
+// if (studentGrade >=70)
+//     System.out.println("C");
+// // else
+
+// System.out.println(studentGrade >= 70 ? "A" : "F");
+// System.out.println(studentGrade >= 60 ? "B" : "F");
+// System.out.println(studentGrade >= 50 ? "C" : "F");
+
+// // if (studentGrade >=60)
+// //     System.out.println("D");
+//     System.out.println("F");
+// int i =3;
+// while(i <= 100)
+//     i = i * 3;
+// System.out.println(i);
+// System.out.println(i <= 300 ? "Good" : "Bad");
+
+// int total = 0;
+// int gradeCounter = 1;
+// while(gradeCounter <= 10){
+//     System.out.print("Enter grade: ");
+//     int grade = input.nextInt();
+//     total = total + grade;
+//     gradeCounter += 1;
+
+// }
+
+// int average = total / 10;
+// System.out.printf("%nTotal of all grades is %d%n", total);
+// System.out.printf("Class average is %d%n", average);
+
+int total = 0;
+int gradeCounter = 0;
+System.out.print("Enter grade or -1 to quit: ");
+int grade = input.nextInt();
+
+while(grade != -1){
+    total = total + grade;
+    gradeCounter += 1;
+    System.out.print("Enter grade or -1 to quit: ");
+    grade = input.nextInt();
+}
+if(gradeCounter != 0){
+double average = (double)total / gradeCounter;
+System.out.printf("%nTotal of the %d grades entered id %d%n", gradeCounter, total);
+System.out.printf("Class average is %.2f%n", average);
+
+}
+else
+System.out.printf("No grades were entered");
 
 }
 }
