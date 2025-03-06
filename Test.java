@@ -1,4 +1,5 @@
 import java.util.Scanner;
+
 public class Test{
 public static void main(String[] args){
     //USAMA IBRAHIM
@@ -259,6 +260,8 @@ Scanner input = new Scanner(System.in);
 // System.out.printf("your daily driving cost: $%.2f%n", dailyCost);
 
 // input.close();
+
+
 // System.out.print("Enter your grade: ");
 // int studentGrade = input.nextInt();
 // if(studentGrade >= 90)
@@ -298,25 +301,53 @@ Scanner input = new Scanner(System.in);
 // System.out.printf("%nTotal of all grades is %d%n", total);
 // System.out.printf("Class average is %d%n", average);
 
-int total = 0;
-int gradeCounter = 0;
-System.out.print("Enter grade or -1 to quit: ");
-int grade = input.nextInt();
+// int total = 0;
+// int gradeCounter = 0;
+// System.out.print("Enter grade or -1 to quit: ");
+// int grade = input.nextInt();
 
-while(grade != -1){
-    total = total + grade;
-    gradeCounter += 1;
-    System.out.print("Enter grade or -1 to quit: ");
-    grade = input.nextInt();
-}
-if(gradeCounter != 0){
-double average = (double)total / gradeCounter;
-System.out.printf("%nTotal of the %d grades entered id %d%n", gradeCounter, total);
-System.out.printf("Class average is %.2f%n", average);
+// while(grade != -1){
+//     total = total + grade;
+//     gradeCounter += 1;
+//     System.out.print("Enter grade or -1 to quit: ");
+//     grade = input.nextInt();
+// }
+// if(gradeCounter != 0){
+// double average = (double)total / gradeCounter;
+// System.out.printf("%nTotal of the %d grades entered id %d%n", gradeCounter, total);
+// System.out.printf("Class average is %.2f%n", average);
+// }
+// else
+// System.out.printf("No grades were entered");
 
-}
-else
-System.out.printf("No grades were entered");
+
+// int passes = 0;
+// int failure = 0;
+// int studentCount = 1;
+// while(studentCount <= 10){
+//     System.out.print("Enter result ( 1 = pass, 2 = fail): ");
+//     int result = input.nextInt();
+//     if(result == 1)
+//          passes = passes + 1;
+//     else
+//         failure = failure + 1;
+//     studentCount++;
+
+// }
+// System.out.printf("Passed: %d%nFailed: %d%n", passes, failure);
+// if(passes > 8)
+//     System.out.printf("%nBonus to instructor! ");
+
+
+
+// int c =5;
+// System.out.printf("c before post increment: %d%n", c);
+// System.out.printf("post incrementing c: %d%n", c++);
+// System.out.printf("c after post increment: %d%n", c);
+
+// System.out.printf("c before pre increment: %d%n", c);
+// System.out.printf("Incrementing c: %d%n", ++c);
+// System.out.printf("c after post increment: %d%n", c);
 
 }
 }
