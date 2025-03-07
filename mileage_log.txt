@@ -1,0 +1,2 @@
+Trip 1 - Miles: 300, Gallons: 10, MPG: 30.00, Overall MPG: 30.00
+Trip 2 - Miles: 250, Gallons: 9, MPG: 27.78, Overall MPG: 28.95

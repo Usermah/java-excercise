@@ -349,6 +349,39 @@ Scanner input = new Scanner(System.in);
 // System.out.printf("Incrementing c: %d%n", ++c);
 // System.out.printf("c after post increment: %d%n", c);
 
+// ==========================================================
+
+int totalMiles = 0;
+int totalGallons = 0;
+int miles, gallons;
+
+while (true) { 
+    System.out.print("Enter miles driven (-1 to quit): ");
+    miles = input.nextInt();
+    if(miles == -1) 
+        break;
+    System.out.print("Enter gallons used: ");
+    gallons = input.nextInt();
+    if(gallons <= 0){
+        System.out.println("Gallons must be greater than zero. Try again. "); 
+        continue;
+     
+    }
+    double mpg = (double) miles / gallons;
+    System.out.printf("Miles per gallon for this trip: %.2f\n", mpg);
+    totalMiles += miles;
+    totalGallons += gallons;
+
+    double totalMpg = (double) totalMiles / totalGallons;
+    System.out.printf("Overall  miles per gallon so far: %.2f\n\n", totalMpg);
+
+
+
+}
+
+System.out.println("Program terminated.");
+input.close();
+
 }
 }
 
